@@ -89,9 +89,9 @@ class InstaBot():
     def credentials(self):
         # self.userName = input("Enter your username \n")
         # self.passWord = input("Enter your password \n")
-        self.userName = "kpkbon89"
-        self.passWord = "pareekkus"
-        self.search = "ratijindall"
+        self.userName = ""
+        self.passWord = ""
+        self.search = ""
 
     def login(self):
         self.driver.get(self.url)
@@ -123,8 +123,8 @@ class Facebook():
         self.url = "https://facebook.com"
         self.driver = webdriver.Chrome("C:\chromedriver\chromedriver.exe")
     def credintials(self):
-        self.Username = "9829593419"
-        self.Password = "hackerboy404@"
+        self.Username = ""
+        self.Password = ""
     def login(self):
         self.driver.get(self.url)
         user = self.driver.find_element_by_xpath("/html/body/div[1]/div[2]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/input")
@@ -139,8 +139,8 @@ def email(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('kushpareekpareek@gmail.com', 'hackerboy404@')
-    server.sendmail('psycotechkp@gmail.com', to, content)
+    server.login('', '')
+    server.sendmail('', to, content)
     server.close()
 def screenshot():
     img = pyautogui.screenshot()
